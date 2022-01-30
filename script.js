@@ -42,7 +42,6 @@ function attTime() {
 //MODO DARK
 let btn_dark = document.querySelector(".btn-dark");
 let body = document.querySelector("body");
-
    
 function dark_mode() {
     body.classList.toggle("bg-dark");
@@ -55,9 +54,9 @@ function dark_mode() {
         btn_dark.innerHTML = "Dark-mode"
         btn_dark.classList.remove("btn-light");
     }
-
-    console.log("clicou")
 }
 
-
 btn_dark.addEventListener("click", dark_mode);
+
+//---------------------//
+//FORMULÁRIO DE INSCRIÇÃO
