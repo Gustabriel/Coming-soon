@@ -6,7 +6,9 @@
 }
 
 body {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #f0f0f0;
 }
@@ -95,19 +97,203 @@ main {
     margin-top: 10px;
 }
 
-.btn-signup {
+.btn-signup, .btn {
     color: #FFFFFF;
     font-size: 16px;
     background-color: #6C63FF;
+    border-top: 2px solid #9b9a9a;
+    border-bottom: 2px solid #000;
     width: 160px;
     height: 46px;
     border-radius: 10px;
     margin: 30px;
+    transition: ease-in-out .3s;
 }
 
-footer {
+.btn:hover {
+    background-color: #574efc;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #9b9a9a;
+}
+
+/* MODAAAL */
+
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    animation: animate-modal;
+    animation-duration: 800ms;
+}
+
+.content-modal {
+    display: none;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    padding: 50px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate-modal;
+    animation-duration: 800ms;
+}
+
+.btn--close-modal {
+    border: 1px solid #4D4C59;
+    background-color: #f1f1f1;
+    width: 35px;
     position: fixed;
-    bottom: 0;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+}
+
+@keyframes animate-modal {
+    from{ opacity: 1;}
+    from{ opacity: 0;}
+}
+
+.modal-header h2 {
+    letter-spacing: 3px;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    color: #574efc;
+    margin-bottom: 20px;
+}
+
+.subscription {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4D4C59;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.icon {
+    border: 2px solid #4D4C59;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.fa-user{
+    position: absolute;
+    left: 94px;
+    top: 27px;
+}
+
+.fa-mobile-alt {
+    position: absolute;
+    left: 96px;
+    top: 72px;
+}
+
+.fa-envelope {
+    position: absolute;
+    left: 92px;
+    top: 118px;
+}
+
+.subscription input {
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    border: 2px solid #4D4C59;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:18px;
+    font-weight: bold;
+}
+
+#check {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 16px;
+}
+
+#check a {
+    padding-left: 8px;
+    color: #28235a;
+}
+
+#terms {
+    margin: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 13px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-sub {
+    height: 50px;
+    font-size: 22px;
+}
+
+.modal-confirm { 
+    display: none;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 250px;
+    width: 700px;
+    position: absolute;
+    padding: 50px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate-modal;
+    animation-duration: 800ms;
+}
+
+.modal-confirm p {
+    font-size: 52px;
+    color: #4D4C59;
+    text-align: center;
+}
+
+.modal-confirm img {
+    width: 100px;
+    margin: auto;
+}
+
+.img {
+    width: 100%;
+    text-align: center;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     font-size:12px;
     text-align: center;

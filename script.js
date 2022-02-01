@@ -60,3 +60,25 @@ btn_dark.addEventListener("click", dark_mode);
 
 //---------------------//
 //FORMULÁRIO DE INSCRIÇÃO
+let btn_signup = document.querySelector(".btn-signup");
+let btn_close = document.querySelector(".btn--close-modal");
+let btn_confirm_sub = document.querySelector(".btn-sub");
+
+btn_signup.addEventListener("click", () => {
+    document.querySelector(".modal").style.display = "block";
+    document.querySelector(".content-modal").style.display = "block";
+});
+
+btn_close.addEventListener("click", () => {
+    document.querySelector(".modal").style.display = "none";
+});
+
+btn_confirm_sub.addEventListener("click", () => {
+    document.querySelector(".content-modal").style.display = "none";
+    document.querySelector(".modal-confirm").style.display = "block";
+});
+
+document.querySelector(".btn--close-modal-confirm").addEventListener("click", () => {
+    document.querySelector(".modal-confirm").style.display = "none";
+    document.querySelector(".modal").style.display = "none";
+});

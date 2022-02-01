@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/310bfd6cb3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Coming Soon</title>
 </head>
@@ -31,17 +32,57 @@
                 <p>
                     Inscreva-se para saber mais sobre o lançamento
                 </p>
-                <button class="btn-signup">
+                <button class="btn btn-signup">
                     Inscreva-se
                 </button>
             </div>
         </section>
-       
         
         <section class="photo">
             <img src="images/rocket.svg" alt="">
         </section>
     </main>
+
+    <section class="modal">
+        <div class="content-modal">
+            <button class="btn--close-modal">
+                ❌
+            </button>
+            <div class="modal-header">
+                <h2>INSCREVA-SE AGORA</h2>
+            </div>
+            <form class="subscription">
+                    <label><div class="icon"></div>
+                        <input type="text" name="name" id="name" placeholder="Nome">
+                        <i class="fas fa-user"></i>
+                    </label>
+                    <label><div class="icon"></div>
+                        <input type="tel" name="cel" id="cel" placeholder="Celular">
+                        
+                        <i class="fas fa-mobile-alt"></i>
+                    </label>
+                    <label><div class="icon"></div>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <i class="fas fa-envelope"></i>
+                    </label>
+                    <label id="check">
+                        <input type="checkbox" name="terms" id="terms"> Eu li e concordo com os <a href="https://pt.wikipedia.org/wiki/Termos_de_uso_na_internet" target="_blank">termos de uso</a>.
+                    </label>
+                    <button type="button" class="btn btn-sub" >
+                        Confirmar
+                    </button>
+            </form>
+        </div>
+
+        <div class="modal-confirm">
+            <button class="btn--close-modal btn--close-modal-confirm">
+                ❌
+            </button>
+            <p>Inscrição confirmada!</p>
+            <div class="img"><img src="images/check.png" alt=""></div>
+            
+        </div>
+    </section>
 
     <footer>Gabriel Gustavo &copy 2022</footer>
 
