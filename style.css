@@ -195,25 +195,14 @@ label {
     width: 35px;
     height: 35px;
     margin-top: 10px;
-}
-
-.fa-user{
-    position: absolute;
-    left: 94px;
-    top: 27px;
+    padding-left: 8px;
 }
 
 .fa-mobile-alt {
-    position: absolute;
-    left: 96px;
-    top: 72px;
+    padding-left: 2px;
 }
 
-.fa-envelope {
-    position: absolute;
-    left: 92px;
-    top: 118px;
-}
+
 
 .subscription input {
     margin-top: 10px;
@@ -369,4 +358,40 @@ footer {
     .signup {
         margin-top: 70px;
     }
+
+  /* modal*/
+    .content-modal {
+        width: 350px;
+        height: auto;
+    }
+
+    .modal-header h2 {
+        letter-spacing: 1px;
+        font-size: 35px;
+    }
+
+    .subscription input {
+        margin-top: 10px;
+        width: 250px;
+    }
+
+    #check {
+        margin-top: 50px;
+        font-size: 13px;
+        width: 300px;
+    }
+    
+    .modal-confirm { 
+        height: auto;
+        width: 300px;
+        padding: 50px 10px;
+    }
+
+    .modal-confirm p {
+        font-size: 45px;
+        padding-bottom: 10px;
+        color: #4D4C59;
+        text-align: center;
+    }
+
 }
