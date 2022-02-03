@@ -64,21 +64,28 @@ let btn_signup = document.querySelector(".btn-signup");
 let btn_close = document.querySelector(".btn--close-modal");
 let btn_confirm_sub = document.querySelector(".btn-sub");
 
+//Inscrição
 btn_signup.addEventListener("click", () => {
     document.querySelector(".modal").style.display = "block";
     document.querySelector(".content-modal").style.display = "block";
 });
 
+//fechar form de inscrição
 btn_close.addEventListener("click", () => {
     document.querySelector(".modal").style.display = "none";
 });
 
+//aviso de inscrição confirmada
 btn_confirm_sub.addEventListener("click", () => {
     document.querySelector(".content-modal").style.display = "none";
     document.querySelector(".modal-confirm").style.display = "block";
 });
 
+//fechar tudo
 document.querySelector(".btn--close-modal-confirm").addEventListener("click", () => {
     document.querySelector(".modal-confirm").style.display = "none";
     document.querySelector(".modal").style.display = "none";
 });
+
+
+/* AUTENTICAÇÕES INSCRIÇÃO */

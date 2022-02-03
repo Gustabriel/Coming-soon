@@ -142,16 +142,25 @@ main {
     transform: translate(-50%, -50%);
     animation: animate-modal;
     animation-duration: 800ms;
+    box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.103);
 }
 
 .btn--close-modal {
-    border: 1px solid #4D4C59;
-    background-color: #f1f1f1;
-    width: 35px;
+    border: none;
+    background-color: #fff;
+    width: 50px;
     position: fixed;
     top: 10px;
     right: 10px;
     padding: 5px;
+}
+
+.modal-confirm .btn--close-modal img {
+    width: 35px; 
+}
+
+.content-modal .btn--close-modal img {
+    width: 35px; 
 }
 
 @keyframes animate-modal {
@@ -163,7 +172,7 @@ main {
     letter-spacing: 3px;
     font-size: 55px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
     color: #574efc;
     margin-bottom: 20px;
 }
@@ -222,17 +231,18 @@ label {
     display: flex;
     align-items: center;
     margin-top: 70px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: lighter;
 }
 
 #check a {
-    padding-left: 8px;
+    padding-left: 4px;
     color: #28235a;
 }
 
 #terms {
     margin: 0;
-    margin-right: 10px;
+    margin-right: 5px;
     cursor: pointer;
     width: 13px;
     display: flex;
@@ -259,6 +269,7 @@ label {
     transform: translate(-50%, -50%);
     animation: animate-modal;
     animation-duration: 800ms;
+    box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.103);
 }
 
 .modal-confirm p {
@@ -356,13 +367,14 @@ footer {
     }
 
     .signup {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
   /* modal*/
     .content-modal {
         width: 350px;
         height: auto;
+        box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.103);
     }
 
     .modal-header h2 {
@@ -385,6 +397,7 @@ footer {
         height: auto;
         width: 300px;
         padding: 50px 10px;
+        box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.103);
     }
 
     .modal-confirm p {
