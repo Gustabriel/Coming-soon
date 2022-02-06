@@ -7,7 +7,7 @@
 <img src="./images/rdm/2022-02-06 02-28-56.gif">
 
 
-## <a href="https://coming_soon.netlify.app"  ><p align="center">Clique aqui para visitar o site<p></a>
+## <a href="https://gustabriel.github.io/Coming-soon/"  ><p align="center">Clique aqui para visitar o site<p></a>
 </div>
 
 <details close align="center">
