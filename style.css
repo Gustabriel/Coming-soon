@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
 }
 
 body {
@@ -17,7 +18,7 @@ main {
     margin: auto auto;
     display: flex;
     justify-content: space-around;
-    align-items: centers;
+    align-items: center;
 }
 
 .coutdown {
@@ -79,7 +80,9 @@ main {
 }
 
 .photo img{
-    width: 807px;
+    width: 800px;
+    max-width: 100%;
+    padding: 10px;
     align-items: center;
 }
 
@@ -89,6 +92,7 @@ main {
     flex-direction: column;
     align-items: center;
     align-content: flex-start;
+    text-align: center;
 }
 
 .signup p {
@@ -121,8 +125,8 @@ main {
 .modal {
     display: none;
     background-color: rgba(0, 0, 0, 0.623);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     animation: animate-modal;
     animation-duration: 800ms;
@@ -224,16 +228,24 @@ label {
     padding-left: 15px;
     padding-right: 15px;
     font-size:18px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
-#check {
+#check, .error {
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 20px;
     font-size: 15px;
     font-weight: lighter;
 }
+
+.error {
+    margin-top: 10px;
+    color: rgb(230, 50, 50);
+    max-width: 340px;
+}
+
+
 
 #check a {
     padding-left: 4px;
@@ -325,14 +337,23 @@ footer {
     background-color: #0f0f0f;
 }
 
+.error {
+    text-align: center;
+}
 
+.tky {
+    color: #4D4C59;
+    width: 100%;
+    max-width: 500px;
+}
 
 /*mobile */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px), (max-width: 1300px), (max-width: 769px), (max-width: 350px){
     main {
         flex-direction: column;
         width: 100vw;
+        max-width: 100%;
     }
 
     .photo {
@@ -341,10 +362,6 @@ footer {
         margin-top: 50px;
     }
     
-    .photo img{
-        width: 350px;
-    }
-
     .coutdown {
         margin: 80px 10px;
         order: 2;
@@ -375,22 +392,24 @@ footer {
         width: 350px;
         height: auto;
         box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.103);
+        padding: 50px 20px;
     }
 
     .modal-header h2 {
         letter-spacing: 1px;
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .subscription input {
         margin-top: 10px;
-        width: 250px;
+        width: 100%;
     }
 
     #check {
-        margin-top: 50px;
-        font-size: 13px;
-        width: 300px;
+        margin-top: 30px;
+        font-size: 12px;
+        min-width: 300px;
+        justify-content: center;
     }
     
     .modal-confirm { 
@@ -407,4 +426,88 @@ footer {
         text-align: center;
     }
 
+    .btn-sub {
+        margin: 20px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1300px){
+    main {
+        flex-direction: row;
+    }
+
+    .photo {
+        padding: 0;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .coutdown {
+        margin: 80px;
+        order: 0;
+    }
+
+  /* modal*/
+    .content-modal {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1150px) {
+    .photo img{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .coutdown {
+        margin: 30px;
+    }
+
+    .content-modal {
+        width: 450px;
+        padding: 50px;
+    }
+
+    .modal-confirm { 
+        width: 600px;
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 769px) {
+    .photo img {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 350px) {
+    * {
+        max-width: 100%;
+    }
+    .coutdown h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .timer .time {
+        font-size: 40px;
+    }
+
+    .signup p {
+        max-width: 90%;
+    }
+
+    #check {
+        margin-top: 30px;
+        font-size: 11px;
+        min-width: 300px;
+        justify-content: center;
+    }
+
+    .content-modal {
+        width: 300px;
+        padding: 50px;
+    }
 }

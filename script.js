@@ -62,30 +62,60 @@ btn_dark.addEventListener("click", dark_mode);
 //FORMULÁRIO DE INSCRIÇÃO
 let btn_signup = document.querySelector(".btn-signup");
 let btn_close = document.querySelector(".btn--close-modal");
+let btn_close_confirm = document.querySelector(".btn--close-modal-confirm");
 let btn_confirm_sub = document.querySelector(".btn-sub");
+
 
 //Inscrição
 btn_signup.addEventListener("click", () => {
     document.querySelector(".modal").style.display = "block";
     document.querySelector(".content-modal").style.display = "block";
+    document.querySelector("#name").focus();
 });
+
 
 //fechar form de inscrição
 btn_close.addEventListener("click", () => {
     document.querySelector(".modal").style.display = "none";
+    
 });
+
 
 //aviso de inscrição confirmada
 btn_confirm_sub.addEventListener("click", () => {
+
+    let name = document.querySelector("#name");
+    let cel = document.querySelector("#cel");
+    let email = document.querySelector("#email");
+    let error = document.querySelector(".error");
+    let checkbox = document.querySelector('#terms');
+
+    if (name.value == "" || cel.value == "" || email.value == "" || email.value == "" || email.value.indexOf("@") == false) {
+        error.innerHTML = "Há campo(s) invalido(s), verifique os campos acima e tente novamente.";
+    } else if (checkbox.checked != true) {
+        error.innerHTML = "É preciso aceitar os termos de uso."
+    } else {
     document.querySelector(".content-modal").style.display = "none";
     document.querySelector(".modal-confirm").style.display = "block";
+    } 
 });
 
+
 //fechar tudo
-document.querySelector(".btn--close-modal-confirm").addEventListener("click", () => {
+    btn_close_confirm.addEventListener("click", () => {
     document.querySelector(".modal-confirm").style.display = "none";
     document.querySelector(".modal").style.display = "none";
+    document.querySelector(".signup").innerHTML = `<p class="tky">Obrigado por se inscrever ${document.querySelector("#name").value}, 5 minutos antes do lançamento você será notificado via email &#x1F605 &#x1F680`;
 });
 
 
 /* AUTENTICAÇÕES INSCRIÇÃO */
+function mascara(cel){ 
+    if(cel.value.length == 0)
+        cel.value = '(' + cel.value; 
+    if(cel.value.length == 3)
+        cel.value = cel.value + ') '; 
+    if(cel.value.length == 10)
+        cel.value = cel.value + '-';
+}
+

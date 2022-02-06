@@ -57,14 +57,18 @@
                     </label>
 
                     <label><div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                        <input type="tel" name="cel" id="cel" placeholder="Celular">
+                        <input type="tel" name="cel" id="cel" size="20" maxlength="15" onkeypress="mascara(this)" placeholder="Celular">
                     </label>
 
                     <label><div class="icon"><i class="fas fa-envelope"></i></div>
                         <input type="email" name="email" id="email" placeholder="Email">
                         
                     </label>
-                    <label id="check">
+                    
+                    <div class="error">
+                    </div>
+
+                    <label for="terms" id="check">
                         <input type="checkbox" name="terms" id="terms"> Eu li e concordo com os <a href="https://pt.wikipedia.org/wiki/Termos_de_uso_na_internet" target="_blank">termos de uso</a>.
                     </label>
                     <button type="button" class="btn btn-sub" >
