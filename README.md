@@ -59,6 +59,7 @@
 :heavy_check_mark: Timer de contagem regressiva;
 :heavy_check_mark: Botão de inscreva-se;\
 :heavy_check_mark: Formulário de inscrição;\
+:heavy_check_mark: Função Dark/Light Mode;\
 
 
 ## :rocket: Technologies ##
