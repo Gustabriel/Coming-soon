@@ -93,7 +93,7 @@ $ yarn start
 
 ## :memo: Dev ##
 
-Made with :heart: by <a href="https://github.com/Gustabriel" target="_blank" Gabriel Gustavo align="center"></a>
+##### Made with :heart: by <a href="https://github.com/Gustabriel" target="_blank" Gabriel Gustavo ></a>
 <p align="center"> <img src="https://avatars.githubusercontent.com/u/85717855?s=400&u=54f74f411cfd6628bde9d3a81565efb9f27e1b22&v=4" width="300px"> </p>
 
 &#xa0;
