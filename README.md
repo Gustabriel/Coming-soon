@@ -4,7 +4,7 @@
 <h1 align="center">&#x1F680 Coming_soon &#x1F680</h1>
 
 
-<img src="./images/rdm/2022-02-06 02-28-56.gif">
+<p align="center"> <img src="./images/rdm/2022-02-06 02-28-56.gif"> </p>
 
 
 ## <a href="https://gustabriel.github.io/Coming-soon/"  ><p align="center">Clique aqui para visitar o site<p></a>
@@ -94,6 +94,7 @@ $ yarn start
 ## :memo: Dev ##
 
 Made with :heart: by <a href="https://github.com/Gustabriel" target="_blank">Gabriel Gustavo</a>
+<p align="center"> <img src="https://avatars.githubusercontent.com/u/85717855?s=400&u=54f74f411cfd6628bde9d3a81565efb9f27e1b22&v=4"> </p>
 
 &#xa0;
 
