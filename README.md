@@ -4,7 +4,7 @@
 <h1 align="center">&#x1F680 Coming_soon &#x1F680</h1>
 
 
-<img src="./images/rdm/2022-02-06 02-28-56.gif">
+<img align="center" src="./images/rdm/2022-02-06 02-28-56.gif">
 
 
 ## <a href="https://gustabriel.github.io/Coming-soon/"  ><p align="center">Clique aqui para visitar o site<p></a>
